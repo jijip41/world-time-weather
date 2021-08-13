@@ -99,6 +99,16 @@ button {
   margin-top: 2rem;
 }
 
+.box__card {
+  background-color: var(--bg-colour);
+  box-shadow: 2px 8px 5px var(--white-colour);
+  border-radius: 25px;
+}
+
+.date__current {
+  color: var(--yellow-colour);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
