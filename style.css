@@ -23,6 +23,8 @@ body {
 header {
   position: sticky;
   top: 0;
+  z-index: 10000;
+  background-color: var(--bg-colour);
 }
 
 header h1,
@@ -50,6 +52,7 @@ h2 {
 main {
   min-height: 80vh;
   margin-top: 1rem;
+  z-index: 100;
 }
 
 form {
