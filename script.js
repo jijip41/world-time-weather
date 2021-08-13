@@ -13,7 +13,7 @@ function createContent(e) {
   const template = document.querySelector('#template');
   const dom_frag = template.content.cloneNode(true);
 
-  fetch(`https://worldtimeapi.org/api/timezone/${area}/${city}`)
+  fetch(`http://worldtimeapi.org/api/timezone/${area}/${city}`)
     .then((response) => response.json())
     .then((json) => {
       console.log(json.datetime);
@@ -41,6 +41,8 @@ function createContent(e) {
 
       let count_time = 0;
       setInterval(() => {}, 1000);
+
+      form.addEventListener('submit', createContent);
 
       // function for real time
 
