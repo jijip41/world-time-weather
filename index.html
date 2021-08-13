@@ -11,8 +11,20 @@
   <body>
     <header><h1>World Time Weather</h1></header>
     <main>
-      <section class="main__top">
+      <section class="main__form">
         <form action="">
+          <div>
+            <label for="area">Area: </label>
+            <select name="area" id="area">
+              <option value="africa">Africa</option>
+              <option value="america">America</option>
+              <option value="asia">Asia</option>
+              <option value="atlantic">Atlantic</option>
+              <option value="australia">Australia</option>
+              <option value="europe">Europe</option>
+              <option value="pacific">Pacific</option>
+            </select>
+          </div>
           <div>
             <label for="city">City: </label><input type="text" name="city" />
           </div>
@@ -24,11 +36,24 @@
             <label for="weather">Weather: </label>
             <input type="checkbox" name="weather" />
           </div>
+          <button id="btn__submit">Submit</button>
         </form>
       </section>
-      <section>
-        <div></div>
-        <template></template>
+      <section class="main__content">
+        <div id="template__container"></div>
+        <template id="template">
+          <div>
+            <p class="date__current"></p>
+            <p class="time__current">
+              <span class="hour__num"></span>
+              <span class="hour__div">:</span>
+              <span class="min__num"></span>
+              <span class="min__div">:</span>
+              <span class="sec__num"></span>
+            </p>
+            <p class="weather__current"></p>
+          </div>
+        </template>
       </section>
     </main>
     <footer>
