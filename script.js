@@ -13,7 +13,7 @@ function createContent(e) {
   const template = document.querySelector('#template');
   const dom_frag = template.content.cloneNode(true);
 
-  fetch(`http://worldtimeapi.org/api/timezone/${area}/${city}`)
+  fetch(`https://worldtimeapi.org/api/timezone/${area}/${city}`)
     .then((response) => response.json())
     .then((json) => {
       console.log(json.datetime);
