@@ -42,8 +42,6 @@ function createContent(e) {
       let count_time = 0;
       setInterval(() => {}, 1000);
 
-      form.addEventListener('submit', createContent);
-
       // function for real time
 
       // function countSec(num){
@@ -55,3 +53,5 @@ function createContent(e) {
       // }
     });
 }
+
+form.addEventListener('submit', createContent);
