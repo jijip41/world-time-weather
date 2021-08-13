@@ -1,8 +1,23 @@
+:root {
+  --bg-colour: #242249;
+  --btn-colour: rgb(96, 163, 142);
+  --yellow-colour: rgb(226, 170, 25);
+  --white-colour: rgb(243, 240, 236);
+  --pink-colour: rgb(230, 113, 110);
+  --black-colour: rgb(0, 0, 0);
+  --special-font: 'Indie Flower', cursive;
+  --heading-font: 'Patrick Hand', cursive;
+  --main-font: 'PT Mono', monospace;
+}
+
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--bg-colour);
+  color: var(--white-colour);
+  font-family: var(--main-font);
 }
 
 header {
@@ -13,7 +28,24 @@ header {
 header h1,
 h2 {
   text-align: center;
+  font-family: var(--heading-font);
 }
+
+.special {
+  font-family: var(--special-font);
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--pink-colour);
+}
+
+/* .w1 {
+  font-family: var(--patrick-font);
+}
+
+.w2,
+.t {
+  font-family: var(--indie-font);
+} */
 
 main {
   min-height: 80vh;
@@ -48,13 +80,25 @@ form div {
   justify-content: flex-start;
 }
 
+button {
+  border: none;
+  border-radius: 25px;
+  height: 1.5rem;
+  width: 5rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  background-color: var(--btn-colour);
+  color: var(--black-colour);
+  font-family: var(--main-font);
+}
+
 #template__container {
   margin-top: 2rem;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   text-align: center;
 }
