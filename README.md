@@ -7,4 +7,7 @@
 - So it can be used by businesses when they need to understand more about their international partners' situation in partners' region. 
 
 ## API 
-- [MetaWeather](https://www.metaweather.com/api/)
+- [MetaWeather](https://www.metaweather.com/api/) 🙆‍♀️ Doesn't support CORS
+- [Openweathermap](https://openweathermap.org/) 🙆‍♀️ Need an API key
+- [WorldTimeAPI](http://worldtimeapi.org/) 🙆‍♀
+
