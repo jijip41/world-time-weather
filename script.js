@@ -11,7 +11,7 @@ function createTime(e) {
   const area = form_time_data.get('area');
   const city = form_time_data.get('city').replace(' ', '_');
   if (area && city) {
-    fetch(`http://worldtimeapi.org/api/timezone/${area}/${city}`)
+    fetch(`https://worldtimeapi.org/api/timezone/${area}/${city}`)
       .then((response) => response.json())
       .then((json) => {
         return json.datetime;
