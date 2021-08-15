@@ -112,6 +112,11 @@ button {
   color: var(--yellow-colour);
 }
 
+.weather__img {
+  width: 50%;
+  margin: auto;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
