@@ -63,21 +63,24 @@ form {
 }
 
 label {
+  max-width: 100%;
+  display: inline;
   float: left;
-  width: 30%;
   text-align: left;
-  margin-right: 1rem;
 }
 
 input,
 select {
-  max-width: 50%;
-  margin-left: 1rem;
   margin-bottom: 0.5rem;
+  max-width: 40%;
+}
+
+select {
+  margin-left: 0.7rem;
 }
 
 form div {
-  min-width: 40vw;
+  min-width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
