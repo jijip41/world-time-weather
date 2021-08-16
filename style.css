@@ -12,9 +12,9 @@
 
 body {
   display: flex;
-  min-height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
   background-color: var(--bg-colour);
   color: var(--white-colour);
   font-family: var(--main-font);
@@ -40,15 +40,6 @@ h2 {
   color: var(--pink-colour);
 }
 
-/* .w1 {
-  font-family: var(--patrick-font);
-}
-
-.w2,
-.t {
-  font-family: var(--indie-font);
-} */
-
 main {
   min-height: 80vh;
   margin-top: 1rem;
@@ -62,11 +53,15 @@ form {
   margin: auto;
 }
 
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
 label {
   max-width: 100%;
-  display: inline;
-  float: left;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 input,
@@ -77,13 +72,6 @@ select {
 
 select {
   margin-left: 0.7rem;
-}
-
-form div {
-  min-width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 
 button {
