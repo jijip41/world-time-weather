@@ -25,7 +25,10 @@ form.addEventListener('submit', (e) => {
         const index = data.indexOf('T');
         const date_now = data.slice(0, index);
         const time_now = data.slice(index + 1, 19);
-
+        dom_frag.querySelector('.title__city--name').textContent = city.replace(
+          '_',
+          ' '
+        );
         dom_frag.querySelector('.date__current').textContent = date_now;
         dom_frag.querySelector('.hour__num').textContent = time_now.slice(0, 2);
         dom_frag.querySelector('.min__num').textContent = time_now.slice(3, 5);
