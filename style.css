@@ -13,7 +13,6 @@
 body {
   display: flex;
   max-width: 100vw;
-  max-height: 100vh;
   flex-direction: column;
   background-color: var(--bg-colour);
   color: var(--white-colour);
